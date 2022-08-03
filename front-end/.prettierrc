@@ -1,0 +1,12 @@
+{
+    "bracketSpacing": true,
+    "printWidth": 140,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true,
+    "arrowParens": "avoid",
+    "tsxBracketSameLine": true,
+    "parser": "babylon"
+    
+}
