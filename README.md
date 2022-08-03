@@ -1,5 +1,6 @@
-# Versão dos pacotes utilizados<br>
+# Versão dos pacotes utilizados no back-end<br>
 
+- aws-sdk: 2.1151.0,<br>
 - bcrypt: 5.0.1,<br>
 - cors: 2.8.5,<br>
 - dayjs: 1.11.2,<br>
@@ -7,11 +8,29 @@
 - express: 4.18.1,<br>
 - express-async-errors: 3.1.1,<br>
 - jsonwebtoken: 8.5.1,<br>
+- mime: 3.0.0,<br>
+- multer: 1.4.5-lts.1,<br>
 - pg: 8.7.3,<br>
 - reflect-metadata: 0.1.13,<br>
 - tsyringe: 4.6.0,<br>
 - typeorm: 0.2.44,<br>
 - uuid: 8.3.2<br>
+
+# Versão dos pacotes utilizados no front-end<br>
+
+- axios: 0.27.2,<br>
+- date-fns: 2.28.0,<br>
+- moment: 2.29.3,<br>
+- react: 18.2.0,<br>
+- react-dom: 18.2.0,<br>
+- react-hook-form: 7.32.1,<br>
+- react-perfect-scrollbar: 1.5.8,<br>
+- react-router-dom: 6.3.0,<br>
+- react-scripts: 5.0.1,<br>
+- styled-components: 5.3.5,<br>
+- typescript: "4.7.3,<br>
+- web-vitals: 2.1.4,<br>
+- yup: 0.32.11<br>
 
 # Star
 
