@@ -31,24 +31,25 @@ Clone the project
 
         gitclone https://github.com/lipe474/Star.git
 
-Install requirements in the back-end and front-end
+Install requirements in the back-end folder and front-end folder
 
         yarn install
 
-Create the database
+Create the database only in the back-end
 
         yarn typeorm migration:run
 
 Create a file "ormconfig.json" by utilizing the "ormconfig.example.json" as example
 
-Create a medic in database for run system
+Create a medic in database for run system, only in the back-end
 
         yarn seed:medic
 
 ## Run project
 
-- Use the command in the back-end and front-end
-  yarn start
+Use the command in the back-end and front-end
+
+        yarn start
 
 ## Contributors
 
