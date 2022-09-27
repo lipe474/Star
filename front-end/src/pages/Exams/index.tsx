@@ -11,6 +11,7 @@ import ModeEditOutlineIcon from '@mui/icons-material/ModeEditOutline';
 import { useNavigate, useParams } from "react-router-dom";
 import { DeleteExam, listExams } from "../../store/api/exams";
 import { Exam } from "../../data/@types/exams";
+import moment from "moment";
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import AnalyticsIcon from '@mui/icons-material/Analytics';
 import FormModal from "../../components/FormModal";
@@ -91,8 +92,8 @@ const ExamPage = () => {
                                             >
                                                 <TableRow>
                                                     <TableCell>Nome</TableCell>
+                                                    <TableCell>Laudo</TableCell>
                                                     <TableCell>Data</TableCell>
-                                                    <TableCell>Status</TableCell>
                                                     <TableCell sx={{ width: '4%', pl: '27px' }}>
                                                         Ações
                                                     </TableCell>
@@ -120,8 +121,8 @@ const ExamPage = () => {
                                                                 </Typography>
                                                             </Box>
                                                         </TableCell>
-                                                        <TableCell size="small">{user?.date}</TableCell>
-                                                        <TableCell size="small">{user?.status}</TableCell>
+                                                        <TableCell size="small">{user?.report}</TableCell>
+                                                        <TableCell size="small">{moment(user?.date).format("DD/MM/YYYY")}</TableCell>
                                                         <TableCell size="small" sx={{ pr: '0px' }}>
                                                             <Stack direction="row" justifyContent={'center'}>
 

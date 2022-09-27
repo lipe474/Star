@@ -610,7 +610,7 @@ export default function Register() {
                                         onClick={() => navigate(`/resident`)}
                                         startIcon={<CancelIcon />}
                                     >
-                                        Cancelar
+                                        Voltar
                                     </Button>
                                 </Grid>
                                 <Grid item xs={12} sm={6}>

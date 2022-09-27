@@ -30,10 +30,9 @@ import { getByIdExamRequests, RegisExamRequests, UpdatedExamRequests } from '../
 const theme = createTheme();
 
 export default function RegisterExamRequests() {
-    const { id, name, type } = useParams()
+    const { id, name, type, useid } = useParams()
     const navigate = useNavigate()
     const [open, setOpen] = React.useState<boolean>(false)
-    //const [openModal, setOpenModal] = React.useState<boolean>(false)
     const [alertTxt, setAlertTxt] = React.useState('')
     const [alertType, setAlertType] = React.useState('')
     const { reset, handleSubmit, control, formState: { errors, isSubmitting } } = useForm({
@@ -217,11 +216,13 @@ export default function RegisterExamRequests() {
                                         variant="outlined"
                                         size='large'
                                         sx={{ mt: 3, mb: 5 }}
-                                        onClick={() => navigate(`/examRequests/${id}/${name}`)}
+                                        onClick={() => {
+                                            navigate(`/examRequests/${useid ?? id}/${name ?? type}`)
+                                        }}
                                         startIcon={<CancelIcon />}
                                     >
 
-                                        Cancelar
+                                        Voltar
                                     </Button>
                                 </Grid>
                                 <Grid item xs={12} sm={6}>

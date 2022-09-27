@@ -110,14 +110,14 @@ const Doctors = () => {
                                                         <TableCell size="small">{user?.phone_number}</TableCell>
                                                         <TableCell size="small">
                                                             <Stack direction="row">
-                                                                <Tooltip title="Editar paciente" placement="top">
+                                                                <Tooltip title="Editar médico" placement="top">
                                                                     <IconButton
                                                                         onClick={() => navigate(`/doctors/${user?.id}`)}
                                                                     >
                                                                         <ModeEditOutlineIcon />
                                                                     </IconButton>
                                                                 </Tooltip>
-                                                                <Tooltip title="Delete paciente" placement="top">
+                                                                <Tooltip title="Delete médico" placement="top">
                                                                     <IconButton
                                                                         onClick={() => {
                                                                             setOpenModal(true)

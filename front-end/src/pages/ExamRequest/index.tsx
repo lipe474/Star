@@ -109,7 +109,7 @@ const ExamRequestPage = () => {
                                                                 {user?.exams}
                                                             </Typography>
                                                         </TableCell>
-                                                        <TableCell size="small">{moment(user?.date).format("DD/MM/YYYY - HH:mm")}</TableCell>
+                                                        <TableCell size="small">{moment(user?.date).format("DD/MM/YYYY")}</TableCell>
                                                         <TableCell size="small">
                                                             {user?.diagnostic_hypothesis?.slice(0, 90)}
                                                             {user?.diagnostic_hypothesis?.length > 90 && '...'}
@@ -119,7 +119,7 @@ const ExamRequestPage = () => {
                                                                 <Tooltip title="Editar pedido" placement="top">
                                                                     <IconButton
 
-                                                                        onClick={() => navigate(`/examRequests/Edit/${user?.id}/${1}`)}
+                                                                        onClick={() => navigate(`/examRequests/Edit/${user?.id}/${id}/${name}`)}
                                                                     >
                                                                         <ModeEditOutlineIcon />
                                                                     </IconButton>

@@ -37,7 +37,7 @@ const RoutesApp = () => {
                         <Route path="/home" element={<Private Item={Home} />} />
                         <Route path="/examRequests/:id/:name" element={<Private Item={ExamRequestPage} />} />
                         <Route path="examRequests/Register/:id/:name" element={<Private Item={RegisterExamRequests} />} />
-                        <Route path="examRequests/Edit/:id/:type" element={<Private Item={RegisterExamRequests} />} />
+                        <Route path="examRequests/Edit/:id/:useid/:type" element={<Private Item={RegisterExamRequests} />} />
                         <Route path="/exam/:id" element={<Private Item={ExamPage} />} />
                         <Route path="exam/Register/:id/:type" element={<Private Item={ExamsRegister} />} />
                         <Route path="exam/Edit/:id/:Edit" element={<Private Item={ExamsRegister} />} />

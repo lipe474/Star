@@ -32,6 +32,8 @@ const theme = createTheme();
 
 export default function ExamsRegister() {
     const { id, details, type, Edit, requestId } = useParams()
+    console.log("requestId", requestId)
+    console.log("id", id)
     const navigate = useNavigate()
     const [open, setOpen] = React.useState<boolean>(false)
     const [alertTxt, setAlertTxt] = React.useState('')
@@ -61,7 +63,6 @@ export default function ExamsRegister() {
     const getExam = async () => {
         const response = await getByIdExam(id as string)
         if (response) {
-            console.log(response)
             reset({
                 name: response?.name,
                 date: response?.date,
@@ -71,7 +72,6 @@ export default function ExamsRegister() {
             })
         }
     }
-
 
     const Download = async (url: string) => {
         window.open(url, '_blank')
@@ -89,7 +89,6 @@ export default function ExamsRegister() {
 
     const onSubmit = async (event: Exam) => {
         const res = Edit ? await UpdatedExam(event, id as string) : await RegisExams(event, id as string)
-
         switch (res?.statusText) {
             case "Bad Request":
                 setOpen(true)
@@ -339,11 +338,11 @@ export default function ExamsRegister() {
                                         variant={details ? 'contained' : "outlined"}
                                         size='large'
                                         sx={{ mt: 3, mb: 5 }}
-                                        onClick={() => navigate(`/exam/${details ? requestId : id}`)}
+                                        onClick={() => navigate(`/exam/${requestId ?? id}`)}
                                         startIcon={<CancelIcon />}
                                     >
 
-                                        Cancelar
+Voltar
                                     </Button>
                                 </Grid>
                                 <Grid item xs={12} sm={6}>

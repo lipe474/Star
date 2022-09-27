@@ -70,11 +70,11 @@ const Teachers = () => {
                     >
                         <Container maxWidth={false}>
                             <Typography variant="h5" component="h1" gutterBottom>
-                                MÉDICOS CADASTRADOS
+                                DOCENTES CADASTRADOS
                             </Typography>
                             <Seach
-                                btnText={"Adicionar médico"}
-                                searchText={"Pesquisar medico"}
+                                btnText={"Adicionar docente"}
+                                searchText={"Pesquisar docente"}
                                 Search={getPatients}
                                 Add={() => navigate("/register/teacher")}
                             />
@@ -127,14 +127,14 @@ const Teachers = () => {
                                                         <TableCell size="small">{user?.phone_number}</TableCell>
                                                         <TableCell size="small">
                                                             <Stack direction="row">
-                                                                <Tooltip title="Editar paciente" placement="top">
+                                                                <Tooltip title="Editar docente" placement="top">
                                                                     <IconButton
                                                                         onClick={() => navigate(`/teachers/${user?.id}`)}
                                                                     >
                                                                         <ModeEditOutlineIcon />
                                                                     </IconButton>
                                                                 </Tooltip>
-                                                                <Tooltip title="Delete paciente" placement="top">
+                                                                <Tooltip title="Delete docente" placement="top">
                                                                     <IconButton
 
                                                                     onClick={() => {

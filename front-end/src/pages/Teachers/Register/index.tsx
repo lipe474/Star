@@ -600,7 +600,7 @@ export default function Register() {
                                         onClick={() => navigate(`/teachers`)}
                                         startIcon={<CancelIcon />}
                                     >
-                                        Cancelar
+                                        Voltar
                                     </Button>
                                 </Grid>
                                 <Grid item xs={12} sm={6}>

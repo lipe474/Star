@@ -495,7 +495,7 @@ export default function RegisterPatient() {
                                         startIcon={<CancelIcon />}
                                     >
 
-                                        Cancelar
+                                        Voltar
                                     </Button>
                                 </Grid>
                                 <Grid item xs={12} sm={6}>
